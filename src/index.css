@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #eee;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, #20b820, #14be2a);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.header .empty {
+  background: linear-gradient(to bottom, #b82020, #be1414);
+}
+
+.header span {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.product {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 24%;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h6 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-size: 20px;
+  color: #179b17;
+}
+
+.product .actions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.actions button {
+  height: 40px;
+  padding: 0 15px;
+  flex: 1;
+  cursor: pointer;
+  border: none;
+}
+
+.actions button[disabled] {
+  opacity: .3;
+  cursor: not-allowed;
+}
+
+.actions .buy-btn {
+  background: #61dafb;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0 4px 4px 0;
+}
+
+.actions .sell-btn {
+  background: #ccc;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  border-radius: 4px 0 0 4px;
+}
+
+.actions .amount {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #555;
+}
+
+.basket-container {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.basket-container h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.basket-container .total {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #179b17;
+}
+
+.basket-reset-btn {
+  background: #61dafb;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.basket-item {
+  padding-bottom: 10px;
+  font-size: 17px;
+}
+
+.basket-item span {
+  color: #999;
+}
