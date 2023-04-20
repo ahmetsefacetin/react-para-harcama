@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import './App.css'
 import products from './products.json'
 import Header from './components/Header'
 import Product from './components/Product'
